@@ -32,7 +32,6 @@ border-bottom: solid 3px #946890;
 box-shadow: inset 0 0 0 1px #f2dcef; 
 color: #7b5777; 
 text-shadow: 0 1px 0 #eacae6; } 
-
 a.button.purple:hover { 
 background: #daa2d4; 
 background: -webkit-gradient(linear, 0 0, 0 bottom, from(#daa2d4), to(#e0b1db)); 
@@ -41,7 +40,6 @@ background: linear-gradient(#daa2d4, #e0b1db);
 border: solid 1px #ca91c4; 
 border-bottom: solid 3px #946890; 
 box-shadow: inset 0 0 0 1px #e9c7e6; } 
-
 a.button.purple:active { 
 background: #d49ace; 
 background: -webkit-gradient(linear, 0 0, 0 bottom, from(#d49ace), to(#cc94c6)); 
@@ -57,7 +55,6 @@ var ctx = canvas.getContext('2d');
 ctx.fillStyle = "white"; 
 ctx.fillRect(0, 0, 640, 480); 
 ctx.closePath(); 
-
 } 
 function er1(){ 
 var canvas = document.getElementById('example'); 
@@ -128,7 +125,121 @@ document.getElementById("otvet").innerHTML = "Точка в области";
 document.getElementById("otvet").innerHTML = "Точка не в области"; 
 }
 } 
-
+function er4(){ 
+var canvas = document.getElementById('example'); 
+var ctx = canvas.getContext('2d'); 
+ctx.beginPath(); 
+ctx.strokeStyle = 'green'; 
+drawpoint(); 
+ctx.moveTo(320, 0); 
+ctx.lineTo(320, 480); 
+ctx.moveTo(0, 240); 
+ctx.lineTo(640, 240); 
+ctx.moveTo(300, 230); 
+ctx.lineTo(300, 0); 
+ctx.moveTo(300, 230); 
+ctx.lineTo(0, 230); 
+ctx.stroke(); 
+x=Number(document.getElementById("x_znach").value); 
+y=Number(document.getElementById("y_znach").value); 
+if (x <= -2 && y>=1) {
+document.getElementById("otvet").innerHTML = "Точка в области";
+} else {
+document.getElementById("otvet").innerHTML = "Точка не в области"; 
+}
+} 
+function er5(){ 
+var canvas = document.getElementById('example'); 
+var ctx = canvas.getContext('2d'); 
+ctx.beginPath(); 
+ctx.strokeStyle = 'green'; 
+drawpoint(); 
+ctx.moveTo(320, 0); 
+ctx.lineTo(320, 480); 
+ctx.moveTo(0, 240); 
+ctx.lineTo(640, 240); 
+ctx.moveTo(300, 230); 
+ctx.lineTo(300, 0); 
+ctx.moveTo(300, 230); 
+ctx.lineTo(0, 230); 
+ctx.stroke(); 
+x=Number(document.getElementById("x_znach").value); 
+y=Number(document.getElementById("y_znach").value); 
+if (y >= -2 && y<=3/2) {
+document.getElementById("otvet").innerHTML = "Точка в области";
+} else {
+document.getElementById("otvet").innerHTML = "Точка не в области"; 
+}
+} 
+function er6(){ 
+var canvas = document.getElementById('example'); 
+var ctx = canvas.getContext('2d'); 
+ctx.beginPath(); 
+ctx.strokeStyle = 'green'; 
+drawpoint(); 
+ctx.moveTo(320, 0); 
+ctx.lineTo(320, 480); 
+ctx.moveTo(0, 240); 
+ctx.lineTo(640, 240); 
+ctx.moveTo(300, 230); 
+ctx.lineTo(300, 0); 
+ctx.moveTo(300, 230); 
+ctx.lineTo(0, 230); 
+ctx.stroke(); 
+x=Number(document.getElementById("x_znach").value); 
+y=Number(document.getElementById("y_znach").value); 
+if (x >= 1 && x<=2 && y <= 4) {
+document.getElementById("otvet").innerHTML = "Точка в области";
+} else {
+document.getElementById("otvet").innerHTML = "Точка не в области"; 
+}
+}
+function er7(){ 
+var canvas = document.getElementById('example'); 
+var ctx = canvas.getContext('2d'); 
+ctx.beginPath(); 
+ctx.strokeStyle = 'green'; 
+drawpoint(); 
+ctx.moveTo(320, 0); 
+ctx.lineTo(320, 480); 
+ctx.moveTo(0, 240); 
+ctx.lineTo(640, 240); 
+ctx.moveTo(300, 230); 
+ctx.lineTo(300, 0); 
+ctx.moveTo(300, 230); 
+ctx.lineTo(0, 230); 
+ctx.stroke(); 
+x=Number(document.getElementById("x_znach").value); 
+y=Number(document.getElementById("y_znach").value); 
+if (x <= -2 && y>=1) {
+document.getElementById("otvet").innerHTML = "Точка в области";
+} else {
+document.getElementById("otvet").innerHTML = "Точка не в области"; 
+}
+}
+function er8(){ 
+var canvas = document.getElementById('example'); 
+var ctx = canvas.getContext('2d'); 
+ctx.beginPath(); 
+ctx.strokeStyle = 'green'; 
+drawpoint(); 
+ctx.moveTo(320, 0); 
+ctx.lineTo(320, 480); 
+ctx.moveTo(0, 240); 
+ctx.lineTo(640, 240); 
+ctx.moveTo(300, 230); 
+ctx.lineTo(300, 0); 
+ctx.moveTo(300, 230); 
+ctx.lineTo(0, 230); 
+ctx.stroke(); 
+x=Number(document.getElementById("x_znach").value); 
+y=Number(document.getElementById("y_znach").value); 
+if (x <= -2 && y>=1) {
+document.getElementById("otvet").innerHTML = "Точка в области";
+} else {
+document.getElementById("otvet").innerHTML = "Точка не в области"; 
+}
+} 
 
 function drawpoint() { 
 x=Number(document.getElementById("x_znach").value); 
@@ -161,7 +272,11 @@ y=<input type="text" value="0" id="y_znach">
 <a href="#" onclick="er1()" class="button purple">3.31а</a> 
 <a href="#" onclick="er2()" class="button purple">3.31б</a> 
 <a href="#" onclick="er3()" class="button purple">3.31В</a> 
-<br> 
+<a href="#" onclick="er1()" class="button purple">3.31г</a> 
+<a href="#" onclick="er2()" class="button purple">3.31д</a> 
+<a href="#" onclick="er3()" class="button purple">3.31е</a>
+<a href="#" onclick="er2()" class="button purple">3.31ж</a> 
+<a href="#" onclick="er3()" class="button purple">3.31з</a>
 <canvas width='640' height='480' id='example'>Обновите браузер</canvas> 
 <br> 
 
@@ -169,5 +284,3 @@ y=<input type="text" value="0" id="y_znach">
 </body> 
 
 </html>
-
-
