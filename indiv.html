@@ -1,9 +1,8 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
 <html> 
 <head> 
 <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"> 
-<title>indiv</title> 
+<title>стили</title> 
 <link rel="stylesheet" href="style.css"> 
 <script> 
 function clean(){ 
@@ -32,7 +31,7 @@ ctx.stroke();
 ctx.rect(0, 0, 300, 230); 
 x=Number(document.getElementById("x_znach").value); 
 y=Number(document.getElementById("y_znach").value); 
-if (((y <= 0 && y <= 2)/2 && x >= 0 && x <= 2) || (x >= 2)){ 
+if (y >= x^2 &&  y<= 2-x || x >= 0 && y <= 2-x){ 
 document.getElementById("otvet").innerHTML = "Точка в области"; 
 } else { 
 document.getElementById("otvet").innerHTML = "Точка не в области"; 
