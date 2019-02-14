@@ -213,14 +213,15 @@ ctx.moveTo(320, 0);
 ctx.lineTo(320, 480); 
 ctx.moveTo(0, 240); 
 ctx.lineTo(640, 240); 
-ctx.moveTo(300, 230); 
-ctx.lineTo(300, 0); 
-ctx.moveTo(300, 230); 
-ctx.lineTo(0, 230); 
+ctx.moveTo(330, 250); 
+ctx.lineTo(350, 250); 
+ctx.lineTo(350, 260); 
+ctx.lineTo(330, 260); 
+ctx.lineTo(330, 250);  
 ctx.stroke(); 
 x=Number(document.getElementById("x_znach").value); 
 y=Number(document.getElementById("y_znach").value); 
-if (x <= -2 && y>=1) {
+if (x <= 3 && x >= 1 && y >= -1 && y<= -2) {
 document.getElementById("otvet").innerHTML = "Точка в области";
 } else {
 document.getElementById("otvet").innerHTML = "Точка не в области"; 
@@ -236,14 +237,17 @@ ctx.moveTo(320, 0);
 ctx.lineTo(320, 480); 
 ctx.moveTo(0, 240); 
 ctx.lineTo(640, 240); 
-ctx.moveTo(300, 230); 
-ctx.lineTo(300, 0); 
-ctx.moveTo(300, 230); 
-ctx.lineTo(0, 230); 
+ctx.moveTo(0, 235); 
+ctx.lineTo(340, 235); 
+ctx.lineTo(340, 480); 
+ctx.moveTo(340, 225); 
+ctx.lineTo(340, 0); 
+ctx.moveTo(340, 225); 
+ctx.lineTo(0, 225);
 ctx.stroke(); 
 x=Number(document.getElementById("x_znach").value); 
 y=Number(document.getElementById("y_znach").value); 
-if (x <= -2 && y>=1) {
+if (x >= 2 || y >= 1/2 && y<= 3/2) {
 document.getElementById("otvet").innerHTML = "Точка в области";
 } else {
 document.getElementById("otvet").innerHTML = "Точка не в области"; 
