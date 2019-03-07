@@ -1,0 +1,31 @@
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function func1() {
+      n = Number(document.getElementById("n_f1_znach").value);
+      var i = 20;
+      while (i < n) {
+        document.getElementById("otvet1").innerHTML = document.getElementById("otvet1").innerHTML + i + " <br>";
+        i++;
+      }
+    }
+
+   
+  </script>
+</head>
+
+<body>
+
+
+  <h1>Цикл while!</h1> n=
+  <input type="text" value="36" id="n_f1_znach">
+  <a href="#" onclick="func1()" class="button red text-blanco text-shadow-negra">HZ</a>
+  <div id="otvet1"></div>
+<br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</body>
+</html>
