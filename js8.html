@@ -10,7 +10,32 @@
       }
     }
 
-   
+     function func2() {
+      b = Number(document.getElementById("n_f2_znach").value);
+      var i = 10;
+      while (i < b) {
+        document.getElementById("otvet2").innerHTML = document.getElementById("otvet2").innerHTML + i*i + " <br>";
+        i++;
+      }
+    }
+function func3() {
+      b = Number(document.getElementById("n_f3_znach").value);
+      var i = b;
+      while (i <= 50) {
+        document.getElementById("otvet3").innerHTML = document.getElementById("otvet3").innerHTML + i*i*i + " <br>";
+        i++;
+      }
+    }
+function func4() {
+   A = Number(document.getElementById("n_f4_znach").value);
+      b = Number(document.getElementById("n_f5_znach").value);
+      var i = a;
+      while (i <= b) {
+        document.getElementById("otvet4").innerHTML = document.getElementById("otvet4").innerHTML + i + " <br>";
+        i++;
+      }
+    }
+
   </script>
 </head>
 
@@ -27,36 +52,29 @@
   <br>
   <br>
   <br>
-</body>
-</html>
-<head>
-  <link rel="stylesheet" href="style.css">
-  <script>
-    function func1() {
-      b = Number(document.getElementById("n_f1_znach").value);
-      var i = 10;
-      while (i < b) {
-        document.getElementById("otvet1").innerHTML = document.getElementById("otvet1").innerHTML + i*i + " <br>";
-        i++;
-      }
-    }
-
-   
-  </script>
-</head>
-
-<body>
-
-
-  <h1>Цикл while!</h1> n=
-  <input type="text" value="100" id="n_f1_znach">
-  <a href="#" onclick="func1()" class="button red text-blanco text-shadow-negra">HZ</a>
-  <div id="otvet1"></div>
+   <h1>Цикл while!</h1> n=
+  <input type="text" value="100" id="n_f2_znach">
+  <a href="#" onclick="func2()" class="button red text-blanco text-shadow-negra">HZ</a>
+  <div id="otvet2"></div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+   <h1>Цикл while!</h1> n=
+  <input type="text" value="100" id="n_f3_znach">
+  <a href="#" onclick="func3()" class="button red text-blanco text-shadow-negra">HZ</a>
+  <div id="otvet3"></div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+   <h1>Цикл while!</h1> 
+ A= <input type="text" value="100" id="n_f4_znach">
+B=  <input type="text" value="100" id="n_f5_znach">
+  <a href="#" onclick="func4()" class="button red text-blanco text-shadow-negra">HZ</a>
+  <div id="otvet4"></div>
 <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
 </body>
 </html>
